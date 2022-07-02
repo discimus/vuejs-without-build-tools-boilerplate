@@ -17,13 +17,15 @@
     <script>
         const { createApp } = Vue
 
-        createApp({
+        const appConfig = {
             data() {
                 return {
                     message: 'Go go to create something amazing!'
                 }
             }
-        }).mount('#app')
+        }
+
+        createApp(appConfig).mount('#app')
     </script>
 </body>
 
