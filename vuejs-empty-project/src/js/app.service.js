@@ -5,5 +5,11 @@ const appService = {
     async procurarCep(cep) {
         const { data } = await channelViacep.procurarCep(cep)
         this.app.message = JSON.stringify(data)
+    },
+    incrementar() {
+        this.app.counter++
+    },
+    decrementar() {
+        this.app.counter--
     }
 }
